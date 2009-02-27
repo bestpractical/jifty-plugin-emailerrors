@@ -4,6 +4,8 @@ use warnings;
 package Jifty::Plugin::EmailErrors;
 use base qw/Jifty::Plugin/;
 
+our $VERSION = '0.01';
+
 =head1 NAME
 
 Jifty::Plugin::EmailErrors - Emails all 500 pages to an arbitrary email address
