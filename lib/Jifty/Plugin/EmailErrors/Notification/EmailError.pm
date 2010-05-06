@@ -38,9 +38,10 @@ sub get_environment {
     my $self = shift;
     my $message = '';
 
-    $message = "Environment:\n\n";
-    $message   .= " $_: $ENV{$_}\n"
-      for sort grep {/^(HTTP|REMOTE|REQUEST)_/} keys %ENV;
+    my %env = %{Jifty->web->request->env};
+    $message  = "Environment:\n\n";
+    $message .= "    $_: $env{$_}\n"
+      for sort grep {/^(HTTP|REMOTE|REQUEST)_/} keys %env;
 
     return $message;
 }
