@@ -12,7 +12,7 @@ Jifty::Plugin::EmailErrors - Emails all 500 pages to an arbitrary email address
 
 =head1 SYNOPSIS
 
-In your config.yml or equivilent:
+In your config.yml or equivalent:
 
   Plugins:
    - EmailErrors:
