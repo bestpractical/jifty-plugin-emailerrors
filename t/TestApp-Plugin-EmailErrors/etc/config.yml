@@ -47,6 +47,12 @@ framework:
     - 
       SkeletonApp: {}
 
+    -
+      EmailErrors:
+        to: errors@example.com
+        from: server@example.com
+        subject: Sound the alarm!
+
   PubSub: 
     Backend: Memcached
     Enable: ~
