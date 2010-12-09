@@ -1,6 +1,6 @@
 --- 
 framework: 
-  AdminMode: 1
+  AdminMode: 0
   ApplicationClass: TestApp::Plugin::EmailErrors
   ApplicationName: TestApp-Plugin-EmailErrors
   ApplicationUUID: C2C3404E-03CE-11E0-8CAD-D61A07ABC711
@@ -15,7 +15,7 @@ framework:
     RecordBaseClass: Jifty::DBI::Record::Cachable
     User: ''
     Version: 0.0.1
-  DevelMode: 1
+  DevelMode: 0
   L10N: 
     PoDir: share/po
   LogLevel: INFO
