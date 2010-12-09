@@ -10,3 +10,5 @@ pm_to_blib
 .prove
 *.sw[po]
 cover_db/
+t/TestApp-Plugin-EmailErrors/testapp_plugin_emailerrors
+t/TestApp-Plugin-EmailErrors/var/
