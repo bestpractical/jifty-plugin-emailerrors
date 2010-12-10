@@ -48,5 +48,6 @@ Copyright 2006-2010 Best Practical Solutions
 
 This is free software and may be modified and distributed under the same terms as Perl itself.
 
+=cut
 
 1;
