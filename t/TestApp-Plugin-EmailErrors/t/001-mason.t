@@ -25,7 +25,7 @@ is(@emails, 1);
 my $email = Email::MIME->new($emails[0]->as_string);
 
 like($email->body_str, qr{Error in /.*/share/web/templates/dereference-error.html, line 4}, "error location");
-like($email->body_str, qr{Not a HASH reference}, "error message");
+like($email->body_str, qr{Not a HASH reference|Can't coerce array into hash}, "error message");
 like($email->body_str, qr{/.*/share/dist/Jifty/web/templates/autohandler, line \d+}, "stack trace");
 like($email->body_str, qr{HTTP_USER_AGENT: Test-WWW-Mechanize}, "environment");
 
