@@ -18,7 +18,7 @@ $mech->no_warnings_ok;
 
 Jifty::Test->setup_mailbox;
 $mech->get_ok('/dereference-error.html');
-$mech->warnings_like(qr/View error: Not a HASH reference/);
+$mech->warnings_like(qr/View error: (Not a HASH reference|Can't coerce array into hash)/);
 
 my @emails = Jifty::Test->messages;
 is(@emails, 1);
