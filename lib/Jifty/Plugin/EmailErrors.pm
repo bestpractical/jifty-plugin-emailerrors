@@ -5,7 +5,7 @@ use warnings;
 package Jifty::Plugin::EmailErrors;
 use base qw/Jifty::Plugin/;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 NAME
 
