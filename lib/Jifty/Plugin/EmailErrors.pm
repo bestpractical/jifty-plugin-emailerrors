@@ -42,6 +42,12 @@ sub init {
     $Jifty::Plugin::EmailErrors::Notification::EmailError::SUBJECT = $args{subject} || 'Jifty error';
 }
 
+=head1 AUTHORS
+
+Alex Vandiver C<alexmv@bestpractical.com>
+
+Shawn M Moore C<sartak@bestpractical.com>
+
 =head1 COPYRIGHT AND LICENSE
 
 Copyright 2006-2010 Best Practical Solutions
